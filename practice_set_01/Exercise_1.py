@@ -5,11 +5,16 @@
       Otherwise, return their sum.                                                      """
                                                                                 
 
-num1 = int(input("Enter first number : "))
-num2 = int(input("Enter second number : "))
-prod = num1 * num2
+# num1 = int(input("Enter first number : "))
+# num2 = int(input("Enter second number : "))
+ 
+def return_prod_sum(num1,num2):
+    prod = num1 * num2
+    sum = num1 + num2
+    if prod <= 1000:
+        return  prod
+    else:
+        return sum
 
-if prod <= 1000:
-    print(prod)
-else:
-    print(num1 + num2)
+result = return_prod_sum(150,200)
+print(f"result is {result}")
